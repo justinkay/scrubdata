@@ -24,5 +24,5 @@ register_trajectory_routes(app, data_root=ROOT / "data")
 if __name__ == "__main__":
     import uvicorn
 
-    print(f"\n  Vibecleaning Trajectory Example: http://{HOST}:{PORT}\n")
+    print(f"\n  Scrubdata Trajectory Example: http://{HOST}:{PORT}\n")
     uvicorn.run(app, host=HOST, port=PORT, log_level="info")

@@ -1,6 +1,6 @@
 # Trajectory Example
 
-This is a richer reference app for Vibecleaning. It is not the default starting point for a new user.
+This is a richer reference app for Scrubdata. It is not the default starting point for a new user.
 
 Use it when you want to study a more complete app built on top of the scaffold.
 

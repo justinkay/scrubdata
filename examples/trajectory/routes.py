@@ -44,8 +44,8 @@ DELETE_CHECKED_SCRIPT = textwrap.dedent(
 
 
     def main():
-        spec_path = Path(os.environ["VIBECLEANING_SPEC_PATH"])
-        summary_path = Path(os.environ["VIBECLEANING_SUMMARY_PATH"])
+        spec_path = Path(os.environ["SCRUBDATA_SPEC_PATH"])
+        summary_path = Path(os.environ["SCRUBDATA_SUMMARY_PATH"])
         spec = json.loads(spec_path.read_text())
         params = dict(spec["step"].get("parameters") or {})
         target_artifact = str(params.get("target_artifact") or "").strip()

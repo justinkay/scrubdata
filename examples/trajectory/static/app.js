@@ -25,7 +25,7 @@ async function ensureAssetsLoaded() {
 
 function loadCss(href) {
   return new Promise((resolve, reject) => {
-    const existing = document.querySelector(`link[data-vibecleaning-asset="${href}"]`);
+    const existing = document.querySelector(`link[data-scrubdata-asset="${href}"]`);
     if (existing) {
       resolve();
       return;
@@ -33,7 +33,7 @@ function loadCss(href) {
     const link = document.createElement("link");
     link.rel = "stylesheet";
     link.href = href;
-    link.dataset.vibecleaningAsset = href;
+    link.dataset.scrubdataAsset = href;
     link.onload = () => resolve();
     link.onerror = () => reject(new Error(`Failed to load ${href}`));
     document.head.appendChild(link);
@@ -42,7 +42,7 @@ function loadCss(href) {
 
 function loadScript(src) {
   return new Promise((resolve, reject) => {
-    const existing = document.querySelector(`script[data-vibecleaning-asset="${src}"]`);
+    const existing = document.querySelector(`script[data-scrubdata-asset="${src}"]`);
     if (existing) {
       if (existing.dataset.loaded === "true") {
         resolve();
@@ -55,7 +55,7 @@ function loadScript(src) {
     const script = document.createElement("script");
     script.src = src;
     script.async = false;
-    script.dataset.vibecleaningAsset = src;
+    script.dataset.scrubdataAsset = src;
     script.addEventListener("load", () => {
       script.dataset.loaded = "true";
       resolve();
@@ -148,11 +148,11 @@ class TrajectoryExampleApp {
   }
 
   getUser() {
-    return localStorage.getItem("vibecleaning_user_name") || "";
+    return localStorage.getItem("scrubdata_user_name") || "";
   }
 
   setUser(user) {
-    localStorage.setItem("vibecleaning_user_name", user);
+    localStorage.setItem("scrubdata_user_name", user);
   }
 
   renderShell() {
@@ -1463,7 +1463,7 @@ async function main() {
 
   const app = new TrajectoryExampleApp({
     mountEl,
-    storageKey: "vibecleaning.app.trajectory",
+    storageKey: "scrubdata.app.trajectory",
     fetchJSON: async url => {
       const response = await apiFetch(url);
       return response.json();

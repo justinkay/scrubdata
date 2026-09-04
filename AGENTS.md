@@ -1,4 +1,4 @@
-# Vibecleaning Agent Guide
+# Scrubdata Agent Guide
 
 Default behavior:
 
@@ -10,13 +10,13 @@ Project model:
 
 - A project lives under `data/<project>/`.
 - Top-level non-hidden files are the raw inputs and become the initial dataset.
-- Vibecleaning state lives under `data/<project>/.vibecleaning/`.
+- Scrubdata state lives under `data/<project>/scrubdata/`.
 - A dataset is a bundle of artifacts addressed by `logical_name`.
 
 Valid DAG rules:
 
 - Never mutate raw files in `data/<project>/`.
-- Never write lineage state outside `.vibecleaning/`.
+- Never write lineage state outside `scrubdata/`.
 - Use an `analysis` for exploratory work.
 - Use a `step` only for a persistent change.
 - Every analysis and step must persist `user`, script, spec, and summary.

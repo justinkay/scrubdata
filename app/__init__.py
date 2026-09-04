@@ -1,1 +1,1 @@
-"""Vibecleaning application package."""
+"""Scrubdata application package."""

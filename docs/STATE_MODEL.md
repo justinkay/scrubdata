@@ -5,7 +5,7 @@ Project layout:
 ```text
 data/<project>/
   raw top-level input files
-  .vibecleaning/
+  scrubdata/
     project.json
     datasets/<dataset_id>.json
     analyses/<analysis_id>/

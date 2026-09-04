@@ -1,6 +1,6 @@
-# Vibecleaning
+# Scrubdata
 
-Vibecleaning is a small scaffold for local data apps backed by a reproducible dataset DAG.
+Scrubdata is a small scaffold for local data apps backed by a reproducible dataset DAG.
 
 The default workflow is:
 
@@ -24,7 +24,7 @@ app/                  generic lineage, execution, preview, and HTTP internals
 server.py             default starter app server
 static/               default starter app frontend
 examples/trajectory/  richer reference app
-data/<project>/       project inputs plus .vibecleaning state
+data/<project>/       project inputs plus scrubdata state
 docs/                 minimal contracts for agents
 ```
 
@@ -36,7 +36,7 @@ python examples/trajectory/server.py
 
 Contracts:
 
-- [AGENTS.md](/Users/justinkay/vibecleaning/AGENTS.md)
-- [docs/ARCHITECTURE.md](/Users/justinkay/vibecleaning/docs/ARCHITECTURE.md)
-- [docs/STATE_MODEL.md](/Users/justinkay/vibecleaning/docs/STATE_MODEL.md)
-- [docs/EXECUTION_CONTRACT.md](/Users/justinkay/vibecleaning/docs/EXECUTION_CONTRACT.md)
+- [AGENTS.md](/Users/justinkay/scrubdata/AGENTS.md)
+- [docs/ARCHITECTURE.md](/Users/justinkay/scrubdata/docs/ARCHITECTURE.md)
+- [docs/STATE_MODEL.md](/Users/justinkay/scrubdata/docs/STATE_MODEL.md)
+- [docs/EXECUTION_CONTRACT.md](/Users/justinkay/scrubdata/docs/EXECUTION_CONTRACT.md)

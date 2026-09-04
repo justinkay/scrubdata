@@ -24,5 +24,5 @@ async def starter_readme():
 if __name__ == "__main__":
     import uvicorn
 
-    print(f"\n  Vibecleaning Starter App: http://{HOST}:{PORT}\n")
+    print(f"\n  Scrubdata Starter App: http://{HOST}:{PORT}\n")
     uvicorn.run(app, host=HOST, port=PORT, log_level="info")

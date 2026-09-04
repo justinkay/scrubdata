@@ -5,7 +5,7 @@ from datetime import UTC, datetime
 from pathlib import Path
 
 
-META_DIR_NAME = ".vibecleaning"
+META_DIR_NAME = "scrubdata"
 
 
 class ProjectStateError(ValueError):
