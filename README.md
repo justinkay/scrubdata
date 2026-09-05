@@ -1,4 +1,4 @@
-# Scrub Data: Reproducible Data Curation with AI Coding Agents
+# Scrub Data: A Framework for Reproducible Data Curation with AI Coding Agents
 
 <p align="center">
 <!-- <img width="1672" height="941" alt="scrubdatalogo" src="https://github.com/user-attachments/assets/6cbe85f4-746e-4041-a711-4a3b961dab4d" /> -->
