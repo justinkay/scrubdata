@@ -15,7 +15,7 @@
 <img width="85%" alt="scrubdata" src="https://github.com/user-attachments/assets/06b2b62e-04da-4b35-9f0d-eecd24d94a5f" />
 </p>
 
-Users interact with an AI agent to iteratively execute data curation operations and develop graphical interfaces to validate their changes (left). Dataset modifications are recorded in an executable data provenance graph, maintaining the full version history in a reproducible manner (right). These components are tied together by a lightweight web framework and REST API that separates agents and raw data, ensuring that the data graph remains well-formed while providing easy access patterns to frontend interfaces (center). Altogether, we call this framework Scrub Data.
+The main user-facing process is an interactive loop with an agent and a browser-based graphical user interface (left). We use the agent to both help us perform data modifications as well as to create interactive visualization components that allow us to verify any data changes that were made. The agent does not touch the data directly, however; dataset modifications are mediated through a REST API that separates agents and raw data (center). On the backend, proposed data modifications are recorded in an executable data provenance graph, maintaining the full data version history in a reproducible manner (right). This version history is saved alongside the dataset, allowing any dataset version to be reconstructed from the raw data by playing forward the transformations stored in the graph, and providing a record of all modifications for posterity. Altogether, we call this framework Scrub Data.
 
 # How to use it
 
