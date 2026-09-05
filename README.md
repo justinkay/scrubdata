@@ -2,7 +2,7 @@
 
 <p align="center">
 <!-- <img width="1672" height="941" alt="scrubdatalogo" src="https://github.com/user-attachments/assets/6cbe85f4-746e-4041-a711-4a3b961dab4d" /> -->
-<img width="700" alt="A logo for Scrub Data. It is a parody of the Scrub Daddy logo." src="https://github.com/user-attachments/assets/6cbe85f4-746e-4041-a711-4a3b961dab4d" />
+<img width="650" alt="A logo for Scrub Data. It is a parody of the Scrub Daddy logo." src="https://github.com/user-attachments/assets/6cbe85f4-746e-4041-a711-4a3b961dab4d" />
 </p>
 
 **What is data curation?** Data curation involves collecting, cleaning, and joining raw data sources to a common format. Most real-world machine learning or data science projects involve data curation to some extent in order to get data ready for analysis.
@@ -12,7 +12,7 @@
 **Why did we create this repo?** We have been experimenting with using agents for data cleaning and curation, and they are pretty great. It is very quick to write a script that, for example, reads in a raw data file, parses and visualizes its contents, and makes modifications according to a natural language prompt. There are risks, however---because agents can modify files themselves, it may be impossible to trace or reproduce all the changes that they make. So we came up with a framework that adds a layer of reproducibility to data curation with coding agents. It works like this:
 
 <p align="center">
-<img width="75%" alt="scrubdata" src="https://github.com/user-attachments/assets/06b2b62e-04da-4b35-9f0d-eecd24d94a5f" />
+<img width="85%" alt="scrubdata" src="https://github.com/user-attachments/assets/06b2b62e-04da-4b35-9f0d-eecd24d94a5f" />
 </p>
 
 Users interact with an AI agent to iteratively execute data curation operations and develop graphical interfaces to validate their changes (left). Dataset modifications are recorded in an executable data provenance graph, maintaining the full version history in a reproducible manner (right). These components are tied together by a lightweight web framework and REST API that separates agents and raw data, ensuring that the data graph remains well-formed while providing easy access patterns to frontend interfaces (center). Altogether, we call this framework Scrub Data.
